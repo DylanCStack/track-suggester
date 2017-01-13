@@ -23,3 +23,23 @@ form {
 .op3 {
   background-color: beige;
 }
+
+.highlighted {
+  background-color:yellow;
+}
+
+#intro {
+
+}
+
+#questions {
+  display:none;
+}
+
+#results {
+  display:none
+}
+
+.q2,.q3,.q4,.q5 {
+  display:none;
+}
