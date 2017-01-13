@@ -9,6 +9,131 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus track picker</h1>
+        <p>Use this handy survey to help decide which track at Epicodus is best for you.</p>
+      </div>
+      <div id="intro">
+        <form>
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="birthday">How old are you?</label>
+            <input id="birthday" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <button type="submit" class="btn btn-info">Begin</button>
+        </form>
+      </div>
+
+      <div id="survey">
+        <div id="questions">
+          <div class="well">
+            <h3 class="question"></h3>
+            <p class="fullQuestion"></p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 q1">
+              <h3>Yes</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q1">
+              <h3>No</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q1">
+              <h3>Unsure</h3>
+              <p></p>
+            </div>
+
+
+            <div class="col-md-4 q2">
+              <h3>Web</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q2">
+              <h3>Applications</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q2">
+              <h3>Unsure</h3>
+              <p></p>
+            </div>
+
+
+            <div class="col-md-4 q3">
+              <h3>A large, established corporation</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q3">
+              <h3>A small company or startup</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q3">
+              <h3>Either or no prefrence</h3>
+              <p></p>
+            </div>
+
+
+            <div class="col-md-4 q4">
+              <h3>Front-end</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q4">
+              <h3>Back-end</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q4">
+              <h3>Either or no prefrence</h3>
+              <p></p>
+            </div>
+
+
+            <div class="col-md-4 q5">
+              <h3>Static</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q5">
+              <h3>Dynamic</h3>
+              <p></p>
+            </div>
+            <div class="col-md-4 q5">
+              <h3>Either or no prefrence</h3>
+              <p></p>
+            </div>
+
+          </div>
+          <div class="btn btn-success q1">
+            Next Question.
+          </div>
+          <div class="btn btn-success q2">
+            Next Question.
+          </div>
+          <div class="btn btn-success q3">
+            Next Question.
+          </div>
+          <div class="btn btn-success q4">
+            Next Question.
+          </div>
+          <div class="btn btn-success q5">
+            Show me the results.
+          </div>
+        </div>
+      </div>
+
+      <div id="results">
+        <h1><span class="name"></span>, you should pick...</h1>
+        <div id="firstResult">
+        </div>
+        <div id="secondResult">
+        </div>
+      </div>
+
 
     </div>
   </body>
