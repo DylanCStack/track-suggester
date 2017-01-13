@@ -22,14 +22,14 @@ $(document).ready(function(){
     $("#questions").fadeToggle(1000);
 
     event.preventDefault();
-    //alert();
+
   });
   $(".col-md-4").click(function(){
     $(".col-md-4").removeClass("highlighted");
     currentAns= $(this).attr("class").substr(-3);
     $(this).addClass("highlighted");
 
-    //alert(currentAns);
+
   });
 
   $("div.btn.q1").click(function(){
@@ -94,7 +94,7 @@ $(document).ready(function(){
     }
   });
   $("div.btn.q5").click(function(){
-    //will not change question value here
+
     if(currentAns=== "op1") {
       php +=2;
       java +=1;
