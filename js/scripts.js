@@ -8,6 +8,7 @@ $(document).ready(function(){
   var ruby = 0;
   var cnet = 0;
   var design = 0;
+  var css = 0;
   var night = 0;
   var ans1;
   var ans2;
