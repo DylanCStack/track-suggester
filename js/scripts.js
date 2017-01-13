@@ -13,14 +13,19 @@ $(document).ready(function(){
   var ans1;
   var ans2;
   $("#intro form").submit(function(event){
+
     name = $("input#name").val();
     age = parseInt($("input#age").val());
     color = $("input#color").val();
-    $("span.name").text($("input#name").val());
 
-    $("#intro form").fadeToggle();
-    $("#questions").fadeToggle(1000);
+    if(name){
+      $("span.name").text($("input#name").val());
 
+      $("#intro form").fadeToggle();
+      $("#questions").fadeToggle(1000);
+    } else {
+      alert("You need to enter a name.")
+    }
     event.preventDefault();
 
   });
@@ -53,12 +58,13 @@ $(document).ready(function(){
     if(currentAns=== "op1") {
       php +=2;
       ruby +=2;
-    } else if (currentAns=== "op2") {
-      java +=2;
-      cnet +=2;
       css +=2;
+    } else if (currentAns=== "op2") {
+      java +=4;
+      cnet +=4;
+
     } else if (currentAns=== "op3") {
-      night +=.5;
+      night +=1;
     }
   });
   $("div.btn.q3").click(function(){
@@ -67,7 +73,7 @@ $(document).ready(function(){
     $(".question").text("4");
     $(".fullQuestion").text("Would you prefer to work front-end or back-end?")
     if(currentAns=== "op1") {
-      java +=2;
+      java +=1;
       cnet +=2;
       php +=1;
     } else if (currentAns=== "op2") {
@@ -75,7 +81,7 @@ $(document).ready(function(){
       ruby +=2;
       css +=1;
     } else if (currentAns=== "op3") {
-      night +=.5;
+      night +=1;
     }
   });
   $("div.btn.q4").click(function(){
@@ -84,13 +90,13 @@ $(document).ready(function(){
     $(".question").text("5");
     $(".fullQuestion").text("If you are working on the web, what kind of website would you want to make?")
     if(currentAns=== "op1") {
-      css +=4;
+      css +=5;
     } else if (currentAns=== "op2") {
       java +=2;
       ruby +=2;
       php +=2;
     } else if (currentAns=== "op3") {
-      night +=.5;
+      night +=1;
     }
   });
   $("div.btn.q5").click(function(){
@@ -101,7 +107,7 @@ $(document).ready(function(){
     } else if (currentAns=== "op2") {
       ruby +=2;
     } else if (currentAns=== "op3") {
-      night +=.5;
+      night +=1;
     }
 
     if(java>php && java>ruby && java>css && java>cnet && java>night) {
@@ -126,6 +132,7 @@ $(document).ready(function(){
 
     $("#survey").hide();
     $("#results").show();
+    
   });
 
 
