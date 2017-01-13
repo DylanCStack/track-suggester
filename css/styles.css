@@ -1,0 +1,25 @@
+form {
+  width:30%;
+}
+
+.well {
+  min-height: 150px;
+}
+
+.row>* {
+  min-height: 150px;
+}
+
+.op1 {
+  background-color: skyblue;
+
+}
+
+.op2 {
+  background-color: lightgreen;
+
+}
+
+.op3 {
+  background-color: beige;
+}
